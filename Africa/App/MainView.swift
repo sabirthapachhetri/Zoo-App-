@@ -13,25 +13,25 @@ struct MainView: View {
             ContentView()
                 .tabItem{
                     Image(systemName: "square.grid.2x2")
-                    Text("browse")
+                    Text("Browse")
                 }
             
             VideoListView()
                 .tabItem{
                     Image(systemName: "play.rectangle")
-                    Text("watch")
+                    Text("Watch")
                 }
             
             MapView()
                 .tabItem{
                     Image(systemName: "map")
-                    Text("locations")
+                    Text("Locations")
                 }
             
             GalleryView()
                 .tabItem{
                     Image(systemName: "photo")
-                    Text("gallery")
+                    Text("Gallery")
                 }
         }
     }
