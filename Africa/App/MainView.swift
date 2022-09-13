@@ -29,7 +29,7 @@ struct MainView: View {
                 }
             
             GalleryView()
-                .tabItem{
+                .tabItem {
                     Image(systemName: "photo")
                     Text("Gallery")
                 }
