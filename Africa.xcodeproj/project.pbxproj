@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C473B7428D0E085001D9014 /* CoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C473B7328D0E085001D9014 /* CoverImageView.swift */; };
 		5C7A70A828D0AEFA009E5814 /* AfricaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7A70A728D0AEFA009E5814 /* AfricaApp.swift */; };
 		5C7A70AA28D0AEFA009E5814 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7A70A928D0AEFA009E5814 /* ContentView.swift */; };
 		5C7A70AC28D0AEFC009E5814 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C7A70AB28D0AEFC009E5814 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C473B7328D0E085001D9014 /* CoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageView.swift; sourceTree = "<group>"; };
 		5C7A70A428D0AEFA009E5814 /* Africa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Africa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C7A70A728D0AEFA009E5814 /* AfricaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfricaApp.swift; sourceTree = "<group>"; };
 		5C7A70A928D0AEFA009E5814 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,6 +71,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C473B7228D0E06F001D9014 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5C473B7328D0E085001D9014 /* CoverImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		5C7A709B28D0AEFA009E5814 = {
 			isa = PBXGroup;
 			children = (
@@ -88,11 +98,12 @@
 		5C7A70A628D0AEFA009E5814 /* Africa */ = {
 			isa = PBXGroup;
 			children = (
-				5C7A70D328D0B476009E5814 /* Info.plist */,
+				5C473B7228D0E06F001D9014 /* View */,
 				5C7A70CA28D0B200009E5814 /* Data */,
 				5C7A70B528D0B1E0009E5814 /* Video */,
 				5C7A70D428D0D09B009E5814 /* App */,
 				5C7A70AB28D0AEFC009E5814 /* Assets.xcassets */,
+				5C7A70D328D0B476009E5814 /* Info.plist */,
 				5C7A70AD28D0AEFC009E5814 /* Preview Content */,
 			);
 			path = Africa;
@@ -233,6 +244,7 @@
 			files = (
 				5C7A70AA28D0AEFA009E5814 /* ContentView.swift in Sources */,
 				5C7A70DD28D0D1B0009E5814 /* MainView.swift in Sources */,
+				5C473B7428D0E085001D9014 /* CoverImageView.swift in Sources */,
 				5C7A70D828D0D14D009E5814 /* MapView.swift in Sources */,
 				5C7A70A828D0AEFA009E5814 /* AfricaApp.swift in Sources */,
 				5C7A70D628D0D13B009E5814 /* VideoListView.swift in Sources */,
