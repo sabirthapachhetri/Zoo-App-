@@ -31,6 +31,7 @@ struct AnimalDetailView: View {
                         .frame(height: 6)
                         .offset(y: 24)
                     )
+                
                 // HEADLINE
                 Text(animal.headline)
                     .font(.headline)
@@ -47,12 +48,38 @@ struct AnimalDetailView: View {
                 .padding(.horizontal)
                 
                 // FACTS
+                Group {
+                    HeadingView(headingImage: "questionmark.circle", headingText: "Did you know?")
+                    
+                    InsertFactView(animal: animal)
+                }
+                .padding(.horizontal)
                 
                 // DESCRIPTION
+                Group {
+                    HeadingView(headingImage: "info.circle", headingText: "All about \(animal.name)")
+                    
+                    Text(animal.description)
+                        .multilineTextAlignment(.leading)
+                        .layoutPriority(1)
+                }
+                .padding(.horizontal)
                 
                 // MAP
+                Group {
+                    HeadingView(headingImage: "map", headingText: "National Parks")
+                    
+                    InsertMapView()
+                }
+                .padding(.horizontal)
                 
                 // LINK
+                Group {
+                    HeadingView(headingImage: "books.vertical", headingText: "Learn More")
+                    
+                    ExternalWeblinkView(animal: animal)
+                }
+                .padding(.horizontal)
             
             }
             .navigationBarTitle("Learn about \(animal.name)", displayMode: .inline)
