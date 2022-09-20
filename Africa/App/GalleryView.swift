@@ -64,7 +64,7 @@ struct GalleryView: View {
                     gridSwitch()
                 })
             }
-            .animation(.easeOut)
+            .animation(.easeIn)
             .padding(.horizontal, 10)
             .padding(.vertical, 50)
         }
